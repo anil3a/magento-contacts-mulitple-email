@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <anlprz translate="title" module="contactsus">
+            <title>AnlprzContacts</title>
+            <sort_order>99</sort_order>
+            <children>
+            <contactsus module="contactsus">
+                    <title>Contacts Data</title>
+                    <sort_order>0</sort_order>               
+                    <children>
+                            <items module="contactsus">
+                                    <title>Manage Messages</title>
+                                    <sort_order>0</sort_order>
+                                    <action>contactsus/adminhtml_contactsus</action>
+                            </items>
+                            <settings module="contactsus">
+                                <title>Configurations</title>
+                                <sort_order>30</sort_order>
+                                <action>adminhtml/system_config/edit/section/contactsus</action>
+                            </settings>
+                            <emails module="contacts">
+                                <title>Set up Contact emails</title>
+                                <sort_order>100</sort_order>
+                                <action>adminhtml/system_config/edit/section/contacts</action>
+                            </emails>
+                    </children>
+            </contactsus>
+            </children>
+        </anlprz>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <anlprz translate="title" module="contactsus">
+                        <title>AnlprzContacts</title>
+                        <sort_order>99</sort_order>
+                        <children>
+                        <contactsus module="contactsus">
+                                <title>Contactsus</title>
+                                <sort_order>0</sort_order>               
+                                <children>
+                                        <items module="contactsus">
+                                                <title>Manage Messages</title>
+                                                <sort_order>0</sort_order>
+                                                <action>contactsus/adminhtml_contactsus</action>
+                                        </items>
+                                        <settings module="contactsus">
+                                            <title>Configurations</title>
+                                            <sort_order>100</sort_order>
+                                            <action>adminhtml/system_config/edit/section/contactsus</action>
+                                        </settings>
+                                </children>
+                        </contactsus>
+                        </children>
+                    </anlprz>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <contactsus>
+                                        <title>Anlprz Contact Extended Section</title>
+                                    </contactsus>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

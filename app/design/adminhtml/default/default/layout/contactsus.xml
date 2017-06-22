@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <contactsus_adminhtml_contactsus_index>
+        <reference name="content">
+            <block type="contactsus/adminhtml_contactsus" name="contactsus" />
+        </reference>
+    </contactsus_adminhtml_contactsus_index>
+</layout>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <contacts translate="label" module="contacts">
+            <groups>
+                <email translate="label">
+                    <fields>
+                        <recipient_email translate="label">
+                            <validate>required-entry</validate>
+                            <comment><![CDATA[<strong style="color:blue">Contact Extender:</strong>Supports more than one email addresss. Use strict syntax for adding more than one email address with comma between them and no spaces :<br><strong>your@email.com,your2@email.com</strong>]]></comment>
+                        </recipient_email>
+                    </fields>
+                </email>
+            </groups>
+        </contacts>
+    </sections>
+</config>

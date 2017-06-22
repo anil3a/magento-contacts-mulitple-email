@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Anlprz
+ *
+ * @category   Anlprz
+ * @package    Anlprz_Contactsus
+ * @author     Anil Prajapati <anilprz3@gmail.com>
+ * @copyright  Copyright (c) 2015.
+ */
+
+-->
+<config>
+    <modules>
+        <Anlprz_Contactsus>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Contacts />
+            </depends>
+        </Anlprz_Contactsus>
+    </modules>
+</config> 

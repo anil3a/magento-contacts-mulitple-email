@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Anlprz_Contacts>
+            <version>1.0.0</version>
+        </Anlprz_Contacts>
+    </modules>
+
+    <global>
+        <helpers>
+            <contactsus>
+                <class>Anlprz_Contacts_Helper</class>
+            </contactsus>
+        </helpers>
+
+       
+    </global>
+
+</config>
